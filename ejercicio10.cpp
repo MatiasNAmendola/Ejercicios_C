@@ -1,35 +1,35 @@
 #include <stdio.h>
 #include <conio.h>
-#include <ctype.h>
+#include <ctype.h
+#define CANT_CAR 20
 
 int main()
 {
-    float mayor = 0, menor = 0, num;
-    int i = 0;
+    int i = 0, canta = 0, cante = 0, canti = 0, canto = 0, cantu = 0, cantvoc = 0, cant_car = CANT_CAR;
+    char letra;
 	/*
-	á     \xa0
-    é     \x82
-    í     \xa1
-    ó     \xa2
-    ú     \xa3
-    Á     \xb5
-    É     \x90
-    Í     \xd6
-    Ó     \xe0
-    Ú     \xe9
-    ñ     \xa4
-    Ñ     \xa5
-    ¿     \xa8
+	ï¿½     \xa0
+    ï¿½     \x82
+    ï¿½     \xa1
+    ï¿½     \xa2
+    ï¿½     \xa3
+    ï¿½     \xb5
+    ï¿½     \x90
+    ï¿½     \xd6
+    ï¿½     \xe0
+    ï¿½     \xe9
+    ï¿½     \xa4
+    ï¿½     \xa5
+    ï¿½     \xa8
     */
 
-	printf("Este programa indicar\xa0 el n\xa3mero m\xa0s grande y el menor\n"
-    "de una serie de 5.\n");
+	printf("Este programa indicar\xa0 el n\xa3mero de vocales ingresadas de una serie de "
+    "de una serie de %i.\n",cant_car);
     
-    for(i=0;i<5;i++)
+    for(i=0;i<cant_car;i++)
     {
-         printf("\nIngrese un n\xa3mero (%i): ",i+1);
-         
-         letra = toupper(getch()); // Pasa a mayúsculas
+         printf("\nIngrese una letra (%i): ",i+1);
+         letra = toupper(getch()); // Pasa a mayï¿½sculas
          switch(letra)
          {
               case 'A':
